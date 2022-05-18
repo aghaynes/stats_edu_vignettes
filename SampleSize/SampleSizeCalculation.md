@@ -21,6 +21,25 @@ statistician cannot give a number without various details. Hence, a good
 understanding from both sides is primordial. The aim of the study has to
 be well defined and all the needed assumptions educated guessed.
 
+There are two important concepts to understand before we move forward:
+Type 1 error and Type 2 error.
+
+#### Type 1 error
+
+A type 1 error is the rejection of the null hypothesis when it is
+actually true (i.e. a false positive - e.g. a pregnant man). This is
+controlled by the selection of *α*, the test significance level, which
+is normally set at 0.05 (which represents incorrectly rejecting the null
+hypothesis 5% of the time). For more exploratory analyses, it might be
+relaxed it to 0.1.
+
+#### Type 2 error
+
+Type 2 errors are failing to reject the null hypotheses when they is
+actually false (i.e. a false negative - e.g. telling a pregnant woman
+that is not pregnant). This is controlled by the power, which is
+generally set at 0.8.
+
 ### Two main paradigms:
 
 #### Null hypothesis significance testing (NHST)
@@ -66,6 +85,52 @@ For continuous outcomes, standard deviations are typically called for.
 This is less relevant if you have a binary endpoint.
 
 <!-- Panel A in the following figure show densities with identical mean values (10), but different standard deviations. Testing a difference with the one on the left would require a much smaller sample size than for the case on the right. Data from those two distributions are shown in panel B. -->
+
+# Quiz
+
+Here is a short quiz to check your understanding…
+
+<!-- Ideally, the correct answers would popup when the questions have been answered. That should be possible with a full blown website, but not on GitHub -->
+
+###### Question 1: In a court room, the defendent is incorrectly sentenced to prison. This is an example of…
+
+-   A. A type 1 error
+
+-   B. A type 2 error
+
+###### Question 2: Type 2 errors are controlled by
+
+-   A. Test significance
+
+-   B. Larger sample size
+
+-   C. Power
+
+-   D. Smaller variation between participants
+
+###### Question 3: You suspect that there is a difference between treatments and want to quantify that difference to within a certain margin. What paradigm are you in?
+
+-   A. Null-hypothesis testing
+
+-   B. Bayesian
+
+-   C. Precision
+
+-   D. Frequentist
+
+###### Question 4: Continuing from the Question 3. Suppose instead that you want to test if one treatment has a higher mean value of an outcome than the other treatment. What information would the statistician need to perform a sample size calculation? Check all that might apply.
+
+-   A. The cost of determining the outcome
+
+-   B. The mean value of the outcome in the relevant population
+
+-   C. An estimate of the variability within the population
+
+-   D. An estimate of the difference you expect to see between
+    treatments
+
+-   E. The number of individuals with the condition that pass through
+    your institution per year
 
 # Example(s)
 
@@ -271,6 +336,16 @@ website](https://ctu-bern.github.io/presize/).
 Sample size calculation is a very important part of the study planning
 process. To make the most of your meeting with the statistician, have
 the answers to the questions mentioned above.
+
+# Quiz answers
+
+Question 1: A (it’s a false positive).  
+Question 2: B or C (a larger sample increases power which reduces the
+risk of a type 2 error).  
+Question 3: C (you’re not testing a difference, just trying the estimate
+the quantity to within a given limit).  
+Question 4: B, C, and D (these are all important. E can also be useful
+for approximating trial duration.
 
 # References
 
