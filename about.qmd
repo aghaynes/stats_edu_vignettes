@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+This site was developed by statisticians of the SCTO statistics and methodology platform.

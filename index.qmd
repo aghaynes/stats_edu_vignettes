@@ -1,0 +1,8 @@
+---
+title: "SCTO Statistics and Methodology platform tools and support"
+---
+
+This site provides access to tools and advise from statisticians of the SCTO statistics and methodology platform.
+
+Topics are split according to the target audience, clinicians or programmers.
+
