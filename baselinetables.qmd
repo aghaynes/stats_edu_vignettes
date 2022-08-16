@@ -191,7 +191,7 @@ btable price mpg rep78 headroom, by(foreign) saving("excars") denom(nonmiss)
 btable_format using "excars", clear drop(effect test)
 ```
 
-```{r}
+```{r, include = FALSE}
 dat <- readr::read_csv("docs/btab1.csv")
 dat[is.na(dat)] <- "" # replace NAs
 names(dat)[1] <- " "  # set missing var name
@@ -215,7 +215,7 @@ btable_format using "excars", clear descriptive(conti median [lq, uq]) drop(effe
 btable_format using "excars", clear desc(conti median [lq, uq] mpg mean (sd)) drop(effect test total info)
 ```
 
-```{r}
+```{r, echo = FALSE}
 dat <- readr::read_csv("docs/btab2.csv")
 dat[is.na(dat)] <- "" # replace NAs
 names(dat)[1] <- " "  # set missing var name
