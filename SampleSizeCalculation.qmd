@@ -27,8 +27,7 @@ A type 1 error is the rejection of the null hypothesis when it is actually true 
 
 #### Type 2 error
 
-Type 2 errors are failing to reject the null hypotheses when they is actually false (i.e. a false negative - e.g. telling a pregnant woman that is not pregnant). This is controlled by the power, which is generally set at 0.8. 
-
+Type 2 errors are failing to reject the null hypotheses when they is actually false (i.e. a false negative - e.g. telling a pregnant woman that is not pregnant). This is controlled by the power, which is generally set at 0.8. Power is the probability of correctly rejecting the null hypothesis when the alternative hypothesis is true.
 
 ### Two main paradigms:
 
