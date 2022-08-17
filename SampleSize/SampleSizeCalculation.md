@@ -18,31 +18,17 @@ Speaking with a statistician about sample size calculation can be
 frustrating for both parties. The investigator just wants a number that
 they can write in their proposal/protocol/grant application. The
 statistician cannot give a number without various details. Hence, a good
-understanding from both sides is primordial. The aim of the study has to
-be well defined and all the needed assumptions educated guessed.
+understanding from both sides is important. The aim of the study has to
+be well defined and all the necessary numbers should be available,
+either from data (clinical or published studies) or based on experience.
+See the [What the statistician needs to
+know](#what-the-statistician-needs-to-know) section for further
+information.
 
-There are two important concepts to understand before we move forward:
-Type 1 error and Type 2 error.
+There are two main paradigms in clinical trials - precision and null
+hypothesis significance testing.
 
-#### Type 1 error
-
-A type 1 error is the rejection of the null hypothesis when it is
-actually true (i.e. a false positive - e.g. a pregnant man). This is
-controlled by the selection of *α*, the test significance level, which
-is normally set at 0.05 (which represents incorrectly rejecting the null
-hypothesis 5% of the time). For more exploratory analyses, it might be
-relaxed it to 0.1.
-
-#### Type 2 error
-
-Type 2 errors are failing to reject the null hypotheses when they is
-actually false (i.e. a false negative - e.g. telling a pregnant woman
-that is not pregnant). This is controlled by the power, which is
-generally set at 0.8.
-
-### Two main paradigms:
-
-#### Null hypothesis significance testing (NHST)
+### Null hypothesis significance testing (NHST)
 
 The aim is to assess if there is a statistical difference between
 e.g. two groups. For example
@@ -50,7 +36,28 @@ e.g. two groups. For example
 -   does medication X lower Y more than medication Z
 -   does surgery X results in fewer Y than surgery Z
 
-#### Precision based approaches
+There are two important concepts to understand in the NHST framework:
+Type 1 error and Type 2 error, both of which are important for the
+sample size calculation.
+
+#### Type 1 error
+
+A type 1 error is the rejection of the null hypothesis when it is
+actually true (i.e. a false positive - e.g. a pregnant man). This is
+controlled by the selection of
+![\alpha](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Calpha "\alpha"),
+the test significance level, which is normally set at 0.05 (which
+represents incorrectly rejecting the null hypothesis 5% of the time).
+For more exploratory analyses, it might be relaxed to 0.1.
+
+#### Type 2 error
+
+Type 2 errors are failing to reject the null hypotheses when they are
+actually false (i.e. a false negative - e.g. telling a pregnant woman
+that she is not pregnant). This is controlled by the power, which is
+generally set at 0.8.
+
+### Precision based approaches
 
 The focus is rather on estimating a quantity to a given accuracy. For
 example, we might expect that 40% of people have a given event within a
@@ -63,9 +70,17 @@ risks).
 
 ### What the statistician needs to know
 
-#### What is the main comparison?
+In order to perform a sample size calculation, the statistician will
+need to know most of the following points. Depending on the question,
+they might also need additional information. Typically, the more
+complicated the analysis, the more information that is needed for the
+sample size calculation.
+
+#### What is the main comparison, if any?
 
 Between two groups is the most common (e.g. intervention vs control).
+This is the typical question in the NHST framework, but not so common in
+where the goal is to estimate precision.
 
 #### What is the primary endpoint?
 
@@ -74,15 +89,16 @@ Between two groups is the most common (e.g. intervention vs control).
 
 #### What effect do you expect to see?
 
--   if you have continuous data, will the difference in means be 10, 20,
-    …, 100?
--   if you have binary data, what proportion of events do you expect in
-    the groups?
+-   if you have continuous data,
+    -   will the difference in means be 10, 20, …, 100?
+    -   What would the group means be?
+    -   how variable are those quantities (e.g. what is the standard
+        deviation?)
+-   if you have binary data,
+    -   what proportion of events do you expect in the groups?
 
-#### How variable will the endpoint be?
-
-For continuous outcomes, standard deviations are typically called for.
-This is less relevant if you have a binary endpoint.
+What would constitute a *clinically relevant* effect for this outcome?
+This is particularly important for non-inferiority trials.
 
 <!-- Panel A in the following figure show densities with identical mean values (10), but different standard deviations. Testing a difference with the one on the left would require a much smaller sample size than for the case on the right. Data from those two distributions are shown in panel B. -->
 
@@ -142,7 +158,7 @@ project with a statistician.
 
 Suppose we want to estimate the mean difference between two groups
 (intervention vs placebo) and would like to be able to test it against
-“no difference.” We have to define which difference will be clinically
+“no difference”. We have to define which difference will be clinically
 relevant to test. Let assume that a difference of 20 between both groups
 is clinically relevant. We also need to guess in an educated way the
 standard deviation (SD) of the outcome in the groups. Let assume a SD of
