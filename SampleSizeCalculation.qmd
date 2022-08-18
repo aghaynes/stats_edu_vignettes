@@ -251,16 +251,21 @@ prec_prop(p = .36, n = c(300, 350, 400, 450, 500)) %>%
 
 For additional details and examples, see the [`presize` website](https://ctu-bern.github.io/presize/).
 
+<!-- we could embed the presize app... -->
+<!-- :::{.column-page} -->
+<!-- <iframe height="400" width="90%" frameborder="no" src="https://shiny.ctu.unibe.ch/presize"> </iframe> -->
+<!-- ::: -->
+
 # Conclusion
 
 Sample size calculation is a very important part of the study planning process. To make the most of your meeting with the statistician, have the answers to the questions mentioned above.
 
-# Quiz answers 
+<!-- # Quiz answers  -->
 
-Question 1: A (it's a false positive).  
-Question 2: B or C (a larger sample increases power which reduces the risk of a type 2 error).  
-Question 3: C (you're not testing a difference, just trying the estimate the quantity to within a given limit).  
-Question 4: B, C, and D (these are all important. E can also be useful for approximating trial duration.
+<!-- Question 1: A (it's a false positive).   -->
+<!-- Question 2: B or C (a larger sample increases power which reduces the risk of a type 2 error).   -->
+<!-- Question 3: C (you're not testing a difference, just trying the estimate the quantity to within a given limit).   -->
+<!-- Question 4: B, C, and D (these are all important. E can also be useful for approximating trial duration. -->
 
 
 # References
