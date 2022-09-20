@@ -21,15 +21,20 @@ website:
     contents:
       - section: "For clinicians"
         contents:
+          - DataSharing.qmd
+          - ReportingGuidelines.qmd
           - SampleSizeCalculation.qmd
       - section: "For programmers"
         contents:
           - baselinetables.qmd
+          - software.qmd
       - about.qmd
       - text: Courses
         file: courses.qmd
       - text: Blog
         file: blog/index.qmd
+      # - text: Software
+      #   file: software.qmd
 
 format:
   html:

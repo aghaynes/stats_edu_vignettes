@@ -1,6 +1,7 @@
 ---
 title: "Sample size calculation"
 bibliography: references.bib
+# format: pdf
 ---
 
 ```{r setup, include=FALSE}

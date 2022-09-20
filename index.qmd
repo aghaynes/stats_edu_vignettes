@@ -16,3 +16,5 @@ Content will be modified without warning or the site may be removed without noti
 We make no guarantees on the accuracy of the information presented.
 
 :::
+
+The official SCTO platforms website can be found [here](https://www.sctoplatforms.ch/).

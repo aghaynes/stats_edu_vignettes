@@ -1,0 +1,64 @@
+---
+title: "Reporting guidelines"
+---
+
+<!-- content needs rearranging, description of what each is about etc -->
+
+Reporting guidelines help improve readers understanding of a project (design, conduct, analysis, and interpretation) and enable them to better assess the validity of the projects results. 
+
+Because different project types require different things to be reports, there are many guidelines for reporting different types of projects. 
+
+### Randomised trials
+  
+  * CONSORT - guidelines for publishing RCTs
+    * [Checklist](http://www.consort-statement.org/consort-statement/checklist)
+    * [Statement](http://www.consort-statement.org/consort-2010)
+    * [Flow diagram](http://www.consort-statement.org/consort-statement/flow-diagram)
+    * DISCOURAGES USE OF P-VALUES/CONFIDENCE INTERVALS/STANDARD ERRORS IN DESCRIPTIVE TABLES (e.g. Table 1) - POSSIBLY USEFUL TO REFUTE REVIEWER REQUESTS FOR THEM (see also the [Datamethods reference collection on "common myths"](https://discourse.datamethods.org/t/reference-collection-to-push-back-against-common-statistical-myths/1787))
+    * [Extension for adaptive designs](https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-020-04334-x)
+      * (checklist in the supplementary materials)
+
+### Observational studies
+
+  * STROBE - guidelines for reporting of observational studies
+    * [STROBE website](https://www.strobe-statement.org/index.php?id=strobe-home)
+    * [STROBE checklists](https://www.strobe-statement.org/index.php?id=available-checklists)
+    * The STROBE statement itself has been published in many journals ([see here](https://www.strobe-statement.org/index.php?id=strobe-publications))
+
+
+### Systematic reviews and meta analyses
+
+  * PRISMA - guidelines for transparent reporting of systematic reviews
+    * [Homepage](http://www.prisma-statement.org/)
+    * [Checklist](http://www.prisma-statement.org/PRISMAStatement/Checklist)
+    * [Extensions to the original statement](http://www.prisma-statement.org/Extensions/)
+    * [Link registration details page](http://www.prisma-statement.org/Protocols/Registration) where registrations are actually made on [PROSPERO](https://www.crd.york.ac.uk/PROSPERO/)
+    * Note that systematic reviews/metaanalyses are sometimes/often rejected by journals for not having been registered
+
+
+
+### Predictive models 
+
+  * TRIPOD - guidelines for reporting of predictive/prognostic models (validation or derivation)
+    * [Moons et al 2015](http://dx.doi.org/10.7326/M14-0698) 
+    * [Moons et al 2012](http://heart.bmj.com/content/98/9/691)
+    * [TRIPOD checklists](https://www.equator-network.org/reporting-guidelines/tripod-statement/)
+    * [Alternate site for derivation/validation checklist](https://med.stanford.edu/content/dam/sm/s-spire/documents/ManuscriptQualityChecklists/Tripod-Checklist-Prediction-Model-Development-and-Validation.pdf)
+    
+Not a reporting guideline per se, but a method of assessing risk of bias and applicability of prediction model studies - [PROBAST](www.probast.org)  
+
+  * [PROBAST paper](https://www.acpjournals.org/doi/10.7326/M18-1376)
+  * [further explanations and elaboration of PROBAST](https://www.acpjournals.org/doi/10.7326/M18-1377)
+  * useful along side TRIPOD perhaps?
+  * use of PROBAST to [assess ML models in ocology](https://diagnprognres.biomedcentral.com/articles/10.1186/s41512-022-00126-w). Long story short, most models are high risk 
+    > 123 (81%, 95% CI: 73.8 to 86.4) developed models and 19 (51%, 95% CI: 35.1 to 67.3) validated models were at high risk of bias due to their analysis, mostly due to shortcomings in the analysis including insufficient sample size and split-sample internal validation
+    
+### Others
+
+  * Latent trajectory studies (GRoLTS)
+    * [The GRoLTS-Checklist: Guidelines for Reporting on Latent Trajectory Studies](https://www.tandfonline.com/doi/full/10.1080/10705511.2016.1247646)
+
+The [EQUATOR Network](https://www.equator-network.org/) also has links to many other guidelines (SPIRIT, CARE, AGREE, ...)
+
+[The COMET Initiative](https://www.comet-initiative.org/) has a searchable list of standardised outcome sets for diseases, conditions etc.
+
