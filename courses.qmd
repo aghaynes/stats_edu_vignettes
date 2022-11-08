@@ -1,0 +1,76 @@
+---
+title: "Courses"
+# format: 
+#   html:
+#     toc: false
+# sidebar: false
+---
+
+This page provides a (non-exhaustive) list of statistically oriented courses that are held in Switzerland. 
+
+<!-- :::{.columns} -->
+<!-- :::{.column width="20%"} -->
+
+Courses are run in the following approximate locations:
+
+<!-- ::: -->
+<!-- :::{.column width="80%"} -->
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+d <- readxl::read_excel("docs/Stats_edu_course_list_07_07_2022_modified_mg.xlsx", sheet = 3)
+
+d$`Name of  training course` <- paste0("<a href='", d$`Course link`, "'>", d$`Name of  training course`, "</a>")
+
+locs <- as.data.frame(table(trimws(unlist(strsplit(d$Location, ",")))))
+locs$place <- as.character(locs$Var1)
+
+library(magrittr)
+
+coords <- tibble::tribble(
+  ~lat, ~long, ~place,
+  47.55, 7.58, "Basel",
+  46.94, 7.44, "Bern",
+  46.20, 6.14, "Geneva",
+  46.19, 9.02, "Ticino",
+  47.36, 8.53, "Zurich",
+) %>% 
+  dplyr::full_join(locs)
+
+library(leaflet)
+
+coords %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addCircles(radius = 5000 + coords$Freq)
+
+```
+
+<!-- ::: -->
+<!-- ::: -->
+
+<br>
+
+:::{.column-page}
+
+```{r}
+#| echo: false
+library(DT)
+
+datatable(d[, -c(3,4)], 
+          filter = "top", 
+          rownames = FALSE, 
+          escape = FALSE,
+          options = list(
+            autoWidth = TRUE
+            )
+          )
+```
+
+:::
+
+

@@ -1,8 +1,20 @@
 ---
-title: "SCTO Statistics and Methodology platform tools and support"
+title: "Welcome"
 ---
 
-This site provides access to tools and advise from statisticians of the SCTO statistics and methodology platform.
+This site provides access to tools and advice from statisticians of the SCTO statistics and methodology platform.
 
 Topics are split according to the target audience, clinicians or programmers.
 
+
+:::{.callout-important}
+
+This is site is currently only for demonstration purposes. It is more conceptual than anything else. 
+
+Content will be modified without warning or the site may be removed without notice.
+
+We make no guarantees on the accuracy of the information presented.
+
+:::
+
+The official SCTO platforms website can be found [here](https://www.sctoplatforms.ch/).

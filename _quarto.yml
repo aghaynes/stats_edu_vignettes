@@ -2,10 +2,13 @@ project:
   type: website
 
 website:
-  title: "SCTO Statistics and Methodology platform tools and support"
-  page-footer: CC-BY SCTO Statistics and Methodology platform
+  title: "Statistics and Methodology - tools and support"
+  page-footer: CC-BY SCTO Statistics and Methodology
+  favicon: docs/SCTO_Platforms.png
   navbar:
-    background: primary
+    # logo: docs/quarto.png
+    logo: docs/SCTO_Platforms.png
+    background: white
     left:
       - text: Home
         file: index.qmd
@@ -14,16 +17,24 @@ website:
     search: true
     align: left
     collapse-level: 1
+    # background: red
     contents:
       - section: "For clinicians"
         contents:
+          - DataSharing.qmd
+          - ReportingGuidelines.qmd
           - SampleSizeCalculation.qmd
       - section: "For programmers"
         contents:
           - baselinetables.qmd
+          - software.qmd
       - about.qmd
+      - text: Courses
+        file: courses.qmd
       - text: Blog
         file: blog/index.qmd
+      # - text: Software
+      #   file: software.qmd
 
 format:
   html:

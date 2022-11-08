@@ -1,6 +1,7 @@
 ---
 title: "Make a baseline table"
 bibliography: references.bib
+# format: pdf
 ---
 
 ```{r setup, include=FALSE}
@@ -20,9 +21,9 @@ Baseline tables can be presented in different ways, but certain features are com
 
 Characteristics are generally presented on the left as rows and groupings at the top as columns. In RCTs, groups are defined by treatment allocation. If appropriated, the overall population's characteristics may be presented in a separate column. Characteristics should include information about the study participants (e.g., demographic, clinical, social) and information on exposures and any particular characteristics that may be predictive of the studied outcome (e.g., health status at baseline). Inside each cell, descriptive statistics are typically given as frequency and percentage for categorical variables and mean (standard deviation) or median (25th-75th percentile or minimum-maximum) for continuous variables. The type of statistical measurement used should be indicated (e.g., together with the characteristic, in a footnote). The number of participants with missing data should be reported for each variable of interest.
 
-**Important note: Baseline table are descriptive tables, significance tests and inferential measures (e.g. standard errors and confidence intervals) should be avoided in observational studies as well as in RCTs (see items 14a and 15a and of the STROBE and CONSORT statements, respectively, @Vandenbroucke_strobe@MOHER201228)**. In RCTs, testing for differences between randomized groups is irrelevant because baseline differences are, by definition, caused by chance.
+**Important note: Baseline table are descriptive tables, significance tests and inferential measures (e.g. standard errors and confidence intervals) should be avoided in observational studies as well as in RCTs (see items 14a and 15a and of the STROBE and CONSORT statements, respectively, @Vandenbroucke_strobe @MOHER201228)**. In RCTs, testing for differences between randomized groups is irrelevant because baseline differences are, by definition, caused by chance.
 
-![Basic baseline structure and analysis-specific considerations affecting columns, rows, and cells. Figure from (\@HAYESLARSON2019125)](docs/bl_fig1.jpg)
+![Basic baseline structure and analysis-specific considerations affecting columns, rows, and cells. Figure from @HAYESLARSON2019125](docs/bl_fig1.jpg)
 
 ```{r gg-oz-gapminder, echo=FALSE, fig.cap="Figure 1: Basic baseline structure and analysis-specific considerations affecting columns, rows, and cells. Figure from (@HAYESLARSON2019125)", message=FALSE, include=FALSE}
 # library(knitr)
@@ -191,7 +192,7 @@ btable price mpg rep78 headroom, by(foreign) saving("excars") denom(nonmiss)
 btable_format using "excars", clear drop(effect test)
 ```
 
-```{r}
+```{r, include = FALSE}
 dat <- readr::read_csv("docs/btab1.csv")
 dat[is.na(dat)] <- "" # replace NAs
 names(dat)[1] <- " "  # set missing var name
@@ -215,7 +216,7 @@ btable_format using "excars", clear descriptive(conti median [lq, uq]) drop(effe
 btable_format using "excars", clear desc(conti median [lq, uq] mpg mean (sd)) drop(effect test total info)
 ```
 
-```{r}
+```{r, echo = FALSE}
 dat <- readr::read_csv("docs/btab2.csv")
 dat[is.na(dat)] <- "" # replace NAs
 names(dat)[1] <- " "  # set missing var name
@@ -236,8 +237,11 @@ Here is a short quiz to check your understanding...
 Which summary statistics can I give to describe continuous and categorical variables?
 
 <details>
+
 <summary>Answer</summary>
+
 Descriptive statistics are typically given as frequency (percentage) for categorical or binary variables, mean and (standard deviation) for continuous normal variables and median (25th-75th percentile or minimum-maximum) for non-normal continuous variables.
+
 </details>
 
 # References

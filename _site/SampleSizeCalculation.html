@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SCTO Statistics and Methodology platform tools and support - Sample size calculation</title>
+<title>Statistics and Methodology - tools and support - Sample size calculation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,6 +107,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./docs/SCTO_Platforms.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -151,7 +152,8 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">SCTO Statistics and Methodology platform tools and support</span>
+    <img src="./docs/SCTO_Platforms.png" alt="">
+    <span class="navbar-title">Statistics and Methodology - tools and support</span>
   </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -199,6 +201,16 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./DataSharing.html" class="sidebar-item-text sidebar-link">Data sharing</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ReportingGuidelines.html" class="sidebar-item-text sidebar-link">Reporting guidelines</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./SampleSizeCalculation.html" class="sidebar-item-text sidebar-link active">Sample size calculation</a>
   </div>
 </li>
@@ -217,11 +229,21 @@ div.csl-indent {
   <a href="./baselinetables.html" class="sidebar-item-text sidebar-link">Make a baseline table</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./software.html" class="sidebar-item-text sidebar-link">Software packages</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./about.html" class="sidebar-item-text sidebar-link">About</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./courses.html" class="sidebar-item-text sidebar-link">Courses</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -250,7 +272,6 @@ div.csl-indent {
   <li><a href="#the-precision-based-framework" id="toc-the-precision-based-framework" class="nav-link" data-scroll-target="#the-precision-based-framework">The precision based framework</a></li>
   </ul></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#quiz-answers" id="toc-quiz-answers" class="nav-link" data-scroll-target="#quiz-answers">Quiz answers</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
@@ -286,7 +307,7 @@ div.csl-indent {
 </section>
 <section id="type-2-error" class="level4">
 <h4 class="anchored" data-anchor-id="type-2-error">Type 2 error</h4>
-<p>Type 2 errors are failing to reject the null hypotheses when they is actually false (i.e.&nbsp;a false negative - e.g.&nbsp;telling a pregnant woman that is not pregnant). This is controlled by the power, which is generally set at 0.8.</p>
+<p>Type 2 errors are failing to reject the null hypotheses when they is actually false (i.e.&nbsp;a false negative - e.g.&nbsp;telling a pregnant woman that is not pregnant). This is controlled by the power, which is generally set at 0.8. Power is the probability of correctly rejecting the null hypothesis when the alternative hypothesis is true.</p>
 </section>
 <section id="two-main-paradigms" class="level3">
 <h3 class="anchored" data-anchor-id="two-main-paradigms">Two main paradigms:</h3>
@@ -546,18 +567,20 @@ NOTE: padj is the adjusted proportion, from which the ci is calculated.</code></
 </div>
 </div>
 <p>For additional details and examples, see the <a href="https://ctu-bern.github.io/presize/"><code>presize</code> website</a>.</p>
+<!-- we could embed the presize app... -->
+<!-- :::{.column-page} -->
+<!-- <iframe height="400" width="90%" frameborder="no" src="https://shiny.ctu.unibe.ch/presize"> </iframe> -->
+<!-- ::: -->
 </section>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <p>Sample size calculation is a very important part of the study planning process. To make the most of your meeting with the statistician, have the answers to the questions mentioned above.</p>
-</section>
-<section id="quiz-answers" class="level1">
-<h1>Quiz answers</h1>
-<p>Question 1: A (it’s a false positive).<br>
-Question 2: B or C (a larger sample increases power which reduces the risk of a type 2 error).<br>
-Question 3: C (you’re not testing a difference, just trying the estimate the quantity to within a given limit).<br>
-Question 4: B, C, and D (these are all important. E can also be useful for approximating trial duration.</p>
+<!-- # Quiz answers  -->
+<!-- Question 1: A (it's a false positive).   -->
+<!-- Question 2: B or C (a larger sample increases power which reduces the risk of a type 2 error).   -->
+<!-- Question 3: C (you're not testing a difference, just trying the estimate the quantity to within a given limit).   -->
+<!-- Question 4: B, C, and D (these are all important. E can also be useful for approximating trial duration. -->
 </section>
 <section id="references" class="level1">
 
@@ -780,7 +803,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">CC-BY SCTO Statistics and Methodology platform</div>
+      <div class="nav-footer-center">CC-BY SCTO Statistics and Methodology</div>
   </div>
 </footer>
 
