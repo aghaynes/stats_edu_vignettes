@@ -11,6 +11,10 @@ knitr::opts_chunk$set(echo = TRUE,
 options(huxtable.knitr_output_format="md")
 ```
 
+::: callout-warning
+This page is under development. Changes should be expected.
+:::
+
 # Background
 
 Epidemiologic and clinical research papers often describe the study sample in a first, baseline table. Providing a baseline table is one of the recommendations of the CONSORT (@MOHER201228) and STROBE (@VONELM20071453) statements. If well-executed, it provides a rapid, objective, and coherent grasp of the data and can illuminate potential threats to internal and external validity (@HAYESLARSON2019125).

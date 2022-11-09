@@ -6,6 +6,12 @@ title: "Courses"
 # sidebar: false
 ---
 
+:::{.callout-warning}
+
+This page is under development. Changes should be expected. 
+
+:::
+
 This page provides a (non-exhaustive) list of statistically oriented courses that are held in Switzerland. 
 
 <!-- :::{.columns} -->
