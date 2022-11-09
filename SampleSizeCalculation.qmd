@@ -9,7 +9,11 @@ knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE)
 ```
 
+:::{.callout-warning}
 
+This page is under development. Changes should be expected. 
+
+:::
 
 # Background
 
@@ -111,10 +115,10 @@ A is the correct answer. The defendant is innocent, so sentencing them to prison
 
 ###### Question 2: Type 2 errors are controlled by 
 
-- A. <a href="#Question 2" data-toggle="popover" title="Incorrect. Type 2 errors are due to lack of precision - sample size">Test significance</a>
-- B. <a href="#Question 2" data-toggle="popover" title="Correct!">Larger sample size</a>
-- C. <a href="#Question 2" data-toggle="popover" title="Correct!">Power</a>
-- D. <a href="#Question 2" data-toggle="popover" title="Incorrect!">Smaller variation between participants</a>
+- A. Test significance
+- B. Larger sample size
+- C. Power
+- D. Smaller variation between participants
 
 <details>
 <summary>Answer</summary>

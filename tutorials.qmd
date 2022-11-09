@@ -1,0 +1,27 @@
+---
+title: "Tutorials"
+bibliography: references.bib
+# format: pdf
+---
+
+We have produced a range of tutorials on a variety of topics. They are targeted at different audiences depending on the content. 
+
+This page provides a brief summary of the topics covered as well as an indication of the target audience.
+
+## [Baseline tables](baselinetables.qmd)
+
+![](https://img.shields.io/badge/Target-Programmers-blue.svg) ![](https://img.shields.io/badge/Level-Beginner--intermediate-yellow.svg)
+
+Baseline tables are included in every paper, yet they are time consuming to produce. This vignette shows some tools to make them a little easier to create.
+
+## [Sample size calculation](SampleSizeCalculation.qmd)
+
+![](https://img.shields.io/badge/Target-Clinicians-blue.svg) ![](https://img.shields.io/badge/Level-Beginner-green.svg)
+
+Sample size calculations are also required for virtually every project. As statisticians, we regularly receive questions on the topic. This vignette provides an overview of the topic and some recommendations for information you should bring the next time you need to discuss the sample size calculations with a statistician.
+
+## Adjusted survival curves 
+
+![](https://img.shields.io/badge/Target-Programmers-blue.svg) ![](https://img.shields.io/badge/Level-Intermediate-orange.svg)
+
+Survival curves are often depicted in an unadjusted state - i.e. the percentage surviving at a given timepoint, potentially split by a group. Where confounding occurs, unadjusted survival curves can be misleading. The inverse probability weighting method seeks to overcome this problem.

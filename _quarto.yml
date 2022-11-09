@@ -19,20 +19,30 @@ website:
     collapse-level: 1
     # background: red
     contents:
-      - section: "For clinicians"
+      - text: Home
+        file: index.qmd
+      - about.qmd
+      - section: Guidance
         contents:
           - DataSharing.qmd
           - ReportingGuidelines.qmd
-          - SampleSizeCalculation.qmd
-      - section: "For programmers"
+      # - section: "For clinicians"
+      #   contents:
+      #     - DataSharing.qmd
+      #     - SampleSizeCalculation.qmd
+      # - section: "For programmers"
+      #   contents:
+      #     - baselinetables.qmd
+      #     - software.qmd
+      - section: Tutorials
         contents:
+          - text: Overview
+            file: tutorials.qmd
+          - SampleSizeCalculation.qmd
           - baselinetables.qmd
-          - software.qmd
-      - about.qmd
       - text: Courses
         file: courses.qmd
-      - text: Blog
-        file: blog/index.qmd
+      - software.qmd
       # - text: Software
       #   file: software.qmd
 
