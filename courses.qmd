@@ -6,20 +6,24 @@ title: "Courses"
 # sidebar: false
 ---
 
-:::{.callout-warning}
+::: callout-warning
+This page is under development. Changes should be expected.
 
-This page is under development. Changes should be expected. 
+Information presented in this website is updated twice a year. Where possible, a website is indicated where users can find complete and up-to-date description of the training.
 
+Institutions are responsible for the quality of the training opportunities they provide.
 :::
 
-This page provides a (non-exhaustive) list of statistically oriented courses that are held in Switzerland. 
+This page provides a (non-exhaustive) list of statistically oriented courses that are held in Switzerland. A more general overview of clinical research training opportunities of the [SCTO's Clinical Trial Unit (CTU) Network](https://www.sctoplatforms.ch/) can be found on the Clinical Research Careers [website](https://cr-careers.ch/education-and-training)
 
 <!-- :::{.columns} -->
+
 <!-- :::{.column width="20%"} -->
 
 Courses are run in the following approximate locations:
 
 <!-- ::: -->
+
 <!-- :::{.column width="80%"} -->
 
 ```{r}
@@ -57,12 +61,12 @@ coords %>%
 ```
 
 <!-- ::: -->
+
 <!-- ::: -->
 
 <br>
 
-:::{.column-page}
-
+::: column-page
 ```{r}
 #| echo: false
 library(DT)
@@ -76,7 +80,4 @@ datatable(d[, -c(3,4)],
             )
           )
 ```
-
 :::
-
-
