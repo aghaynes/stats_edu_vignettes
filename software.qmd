@@ -292,7 +292,8 @@ Data can be read into R using `read_secuTrial`. The `visit_structure` function g
 
 ```{r}
 #| message: false
-#| layout: [1,2]
+#| layout-nrow: 1
+#| layout-ncol: 2
 #| code-fold: true
 library(secuTrialR)
 # prepare path to example export
@@ -350,7 +351,8 @@ CTU's sometimes also develop software without explicit funding from the SCTO pla
 
 ```{r}
 #| code-fold: true
-#| layout: [2,2]
+#| layout-nrow: 1
+#| layout-ncol: 2
 #| message: false
 library(accrualPlot)
 data(accrualdemo)

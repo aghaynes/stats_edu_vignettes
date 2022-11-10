@@ -21,7 +21,8 @@ website:
     contents:
       - text: Home
         file: index.qmd
-      - about.qmd
+      - text: About us & contact
+        file: about.qmd
       - section: Guidance
         contents:
           - DataSharing.qmd

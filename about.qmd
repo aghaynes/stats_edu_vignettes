@@ -1,5 +1,23 @@
 ---
-title: "About"
+title: "About us & contact"
 ---
 
+# About us
+
 This site was developed by statisticians of the SCTO statistics and methodology platform.
+
+The SCTO statistics and methodology platform is a network of statisticians working in Swiss clinical trial units, universities, and cantonal hospitals. As part of the Swiss Clinical Trial Organisation (SCTO) network we are connected with other platforms (auditing, data management, education, monitoring, project management, regulatory affairs, safety) providing innovative tools for clinical research professionals. More information can be found on the [official SCTO platforms website](https://www.sctoplatforms.ch/).
+
+# Get in touch with us
+
+Do you have any questions or suggestions? Feel free to contact us using the form [here](https://www.sctoplatforms.ch/en/scto-platforms/statistics-methodology-5.html#section-159).
+
+Direct support for clinical studies and research projects can also be provided by your local CTU:
+
+-   [DKF Basel](https://dkf.unibas.ch/en/)
+-   [CTU Bern](http://www.ctu.unibe.ch/index_eng.html)
+-   [CRC Geneva](https://crc.hug.ch/en)
+-   [CRC Lausanne](https://www.chuv.ch/fr/crc/crc-home/)
+-   [CTU-EOC Lugano](http://www.ctueoc.ch/)
+-   [CTU St.Gallen](https://www.kssg.ch/mrc/clinical-trials-unit)
+-   [CTC Zürich](https://www.usz.ch/en/clinic/clinical-trials-center/)
