@@ -292,7 +292,7 @@ Data can be read into R using `read_secuTrial`. The `visit_structure` function g
 
 ```{r}
 #| message: false
-#| layout: [1,2]
+#| layout-ncol: 2
 #| code-fold: true
 library(secuTrialR)
 # prepare path to example export
@@ -350,7 +350,8 @@ CTU's sometimes also develop software without explicit funding from the SCTO pla
 
 ```{r}
 #| code-fold: true
-#| layout: [2,2]
+#| layout-ncol: 2
+#| layout-nrow: 2
 #| message: false
 library(accrualPlot)
 data(accrualdemo)
@@ -536,7 +537,7 @@ As `stata_secutrial` is just code rather than a package, you can copy the files 
 
 ## `SwissASR` - simplified annual safety reports with R
 ![](https://img.shields.io/badge/Language-R-red.svg)
-[![](https://img.shields.io/badge/GitHub-silver.svg)](https://github.com/CTU-Bern/SwissASR) <!-- [![](https://img.shields.io/badge/Website-blue.svg)](https://ctu-bern.github.io/SwissASR/) -->
+[![](https://img.shields.io/badge/GitHub-silver.svg)](https://github.com/CTU-Bern/SwissASR) [![](https://img.shields.io/badge/Website-blue.svg)](https://ctu-bern.github.io/SwissASR/)
 
 Ethics and regulators often require annual safety reports. `SwissASR` provides a relatively easy way to produce annual safety reports according to the current template available on the SwissMedic(?) website. The function returns a word file with the safety data completed based on the data provided to it. Minimal additional details should then be added by the study team or principal investigator.
 
