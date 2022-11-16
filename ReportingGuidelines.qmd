@@ -62,7 +62,11 @@ Not a reporting guideline per se, but a method of assessing risk of bias and app
   * Latent trajectory studies (GRoLTS)
     * [The GRoLTS-Checklist: Guidelines for Reporting on Latent Trajectory Studies](https://www.tandfonline.com/doi/full/10.1080/10705511.2016.1247646)
 
-The [EQUATOR Network](https://www.equator-network.org/) also has links to many other guidelines (SPIRIT, CARE, AGREE, ...)
+### Find additional guidelines 
 
-[The COMET Initiative](https://www.comet-initiative.org/) has a searchable list of standardised outcome sets for diseases, conditions etc.
+  * The new open-access database [LIGHTS](www.lights.science) - Library of Guidance for Health Scientists - is a very usefull tool to support the search for methods guidance.
+
+  * The [EQUATOR Network](https://www.equator-network.org/) also has links to many other guidelines (SPIRIT, CARE, AGREE, ...)
+
+  * [The COMET Initiative](https://www.comet-initiative.org/) has a searchable list of standardised outcome sets for diseases, conditions etc.
 

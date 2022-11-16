@@ -292,7 +292,7 @@ Data can be read into R using `read_secuTrial`. The `visit_structure` function g
 
 ```{r}
 #| message: false
-#| layout-ncol: 2
+#| layout-nrow: 1
 #| code-fold: true
 library(secuTrialR)
 # prepare path to example export
