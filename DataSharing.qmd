@@ -8,6 +8,6 @@ This page is under development. Changes should be expected.
 
 Data sharing has become a requirement of many funding bodies and is becoming a scientific standard in many disciplines. In medical research, however, data sharing can conflict with clinicians’ obligation to protect patients’ privacy. Although general recommendations on data sharing already exist for clinical research, they are often not applicable to aspects specific to Switzerland. The guidance document from the SCTO’s CTU Network fills this gap: it provides practical recommendations for all relevant aspects of data sharing in accordance with legislation in Switzerland. Included in the guidelines are details of aspects are to be considered, decision-making criteria, examples, and checklists – all of which aim to support clinical research data sharing in practice. 
 
-The full guidance can be found [on the SCTO platforms website](https://www.sctoplatforms.ch/en/publications/sharing-of-data-from-clinical-research-projects-guidance-from-the-sctors-clinical-trial-unit-network-143.html).
+The full guidance can be found on[the Tools & Resources website by the SCTO Platforms](https://www.sctoplatforms.ch/en/publications/sharing-of-data-from-clinical-research-projects-guidance-from-the-sctors-clinical-trial-unit-network-143.html).
 
 
