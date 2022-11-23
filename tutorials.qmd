@@ -20,7 +20,7 @@ Baseline tables are included in every paper, yet they are time consuming to prod
 
 Sample size calculations are also required for virtually every project. As statisticians, we regularly receive questions on the topic. This vignette provides an overview of the topic and some recommendations for information you should bring the next time you need to discuss the sample size calculations with a statistician.
 
-## Adjusted survival curves 
+## [Adjusted survival curves](AdjustedSurvivalCurves.qmd)
 
 ![](https://img.shields.io/badge/Target-Programmers-blue.svg) ![](https://img.shields.io/badge/Level-Intermediate-orange.svg)
 
