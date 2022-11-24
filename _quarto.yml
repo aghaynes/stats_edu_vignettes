@@ -41,6 +41,7 @@ website:
             file: tutorials.qmd
           - SampleSizeCalculation.qmd
           - baselinetables.qmd
+          - AdjustedSurvivalCurves.qmd
       - text: Courses
         file: courses.qmd
       - software.qmd
