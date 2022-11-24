@@ -42,6 +42,7 @@ website:
           - SampleSizeCalculation.qmd
           - baselinetables.qmd
           - AdjustedSurvivalCurves.qmd
+          - safetyreporting.qmd
       - text: Courses
         file: courses.qmd
       - software.qmd

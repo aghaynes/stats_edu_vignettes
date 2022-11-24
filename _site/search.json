@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Welcome",
     "section": "",
-    "text": "The overarching aim of the statistics and methodological platform is to develop open access resources supporting the conception, completion and dissemination of clinical research. We help projects to:\n\ndevelop statistical softwares & packages,\nwrite guidelines & tutorials,\ninventory essential guidelines and available training options in Switzerland.\n\nAs part of the The Swiss Clinical Trial Organisation (SCTO) network we are connected with other platforms (auditing, data management, education, monitoring, project management, regulatory affairs, safety) providing innovative tools for clinical research professionals. Additional tools and resources can be found on the official SCTO platforms website.\n\n\n\n\n\n\nImportant\n\n\n\nThis is site is currently only for demonstration purposes. It is more conceptual than anything else.\nContent will be modified without warning or the site may be removed without notice.\nWe make no guarantees on the accuracy of the information presented."
+    "text": "The overarching aim of the statistics and methodological platform is to develop open access resources supporting the conception, completion and dissemination of clinical research. We help projects to:\n\ndevelop statistical softwares & packages,\nwrite guidelines & tutorials,\ninventory essential guidelines and available training options in Switzerland.\n\nAs part of the Swiss Clinical Trial Organisation (SCTO) network we are connected with other platforms (auditing, data management, education, monitoring, project management, regulatory affairs, safety) providing innovative tools for clinical research professionals. Additional tools and resources can be found on the Tools & Resources website by the SCTO Platforms.\n\n\n\n\n\n\nImportant\n\n\n\nThis is site is currently only for demonstration purposes. It is more conceptual than anything else.\nContent will be modified without warning or the site may be removed without notice.\nWe make no guarantees on the accuracy of the information presented."
   },
   {
     "objectID": "about.html",
@@ -60,7 +60,7 @@
     "href": "DataSharing.html",
     "title": "Data sharing",
     "section": "",
-    "text": "Data sharing has become a requirement of many funding bodies and is becoming a scientific standard in many disciplines. In medical research, however, data sharing can conflict with clinicians’ obligation to protect patients’ privacy. Although general recommendations on data sharing already exist for clinical research, they are often not applicable to aspects specific to Switzerland. The guidance document from the SCTO’s CTU Network fills this gap: it provides practical recommendations for all relevant aspects of data sharing in accordance with legislation in Switzerland. Included in the guidelines are details of aspects are to be considered, decision-making criteria, examples, and checklists – all of which aim to support clinical research data sharing in practice.\nThe full guidance can be found on the SCTO platforms website."
+    "text": "Data sharing has become a requirement of many funding bodies and is becoming a scientific standard in many disciplines. In medical research, however, data sharing can conflict with clinicians’ obligation to protect patients’ privacy. Although general recommendations on data sharing already exist for clinical research, they are often not applicable to aspects specific to Switzerland. The guidance document from the SCTO’s CTU Network fills this gap: it provides practical recommendations for all relevant aspects of data sharing in accordance with legislation in Switzerland. Included in the guidelines are details of aspects are to be considered, decision-making criteria, examples, and checklists – all of which aim to support clinical research data sharing in practice.\nThe full guidance can be found onthe Tools & Resources website by the SCTO Platforms."
   },
   {
     "objectID": "ReportingGuidelines.html",
@@ -74,7 +74,7 @@
     "href": "safetyreporting.html",
     "title": "Safety reporting in clinical trials",
     "section": "",
-    "text": "The safety of research participants is of utmost importance and must be considered for various processes and decisions throughout a clinical study. As such, trialists must be vigilant with regards to participant safety. Many regulatory authorities require regular updates with regards to safety. SwissEthics, for instance, requires expedited reporting of some safety events, as well as an Annual Safety Report (ASR).\nFor more information about the conduct of clinical trial and safety reporting, we recommend the following pages: Easy GCS, Safety Reporting Forms."
+    "text": "The safety of research participants is of utmost importance and must be considered for various processes and decisions throughout a clinical study. As such, trialists must be vigilant with regards to participant safety. Many regulatory authorities require regular updates with regards to safety. Swissethics, for instance, requires expedited reporting of some safety events, as well as an Annual Safety Report (ASR).\nFor more information about the conduct of clinical trial and safety reporting, we recommend the following pages: Easy GCS, Safety Reporting Forms."
   },
   {
     "objectID": "safetyreporting.html#safety-reporting-in-practice",
@@ -215,5 +215,61 @@
     "title": "Tutorials",
     "section": "Adjusted survival curves",
     "text": "Adjusted survival curves\n \nSurvival curves are often depicted in an unadjusted state - i.e. the percentage surviving at a given timepoint, potentially split by a group. Where confounding occurs, unadjusted survival curves can be misleading. The inverse probability weighting method seeks to overcome this problem."
+  },
+  {
+    "objectID": "safetyreporting.html#annual-safety-reports-in-practice",
+    "href": "safetyreporting.html#annual-safety-reports-in-practice",
+    "title": "Safety reporting in clinical trials",
+    "section": "Annual Safety Reports, in practice",
+    "text": "Annual Safety Reports, in practice\n\nDefinition of the reporting phase\nOften, the requirement is to submit any safety events that have occurred in at least the last 12 months of a trial. We believe that this is not sensible. In our opinion, all events that have occurred since the beginning of the trial should be reported.\n\n\n\n\n\n\nNote\n\n\n\nSimilarly, for medical devices, a cumulative list for the full study period needs to be submitted as part of expedited reporting following MDCG 2020-10/1\n\n\nSuppose a trial was approved on the first of January 2020. This requires that ASRs be submitted each January. Now, suppose that the first years report is sent on the 3rd January 2021. On the 10th January 2021, during a follow up visit, we are informed that an event occurred the previous August (or February, or October, or December). The event should therefore have been reported in the recent report, but wasn’t as we were unaware of it. Using the events-occuring-in-the-previous-12-months approach, the event will also not be reported in the next report (covering year 2 in 2022), as it occurred during year 1. Furthermore, events that were unresolved at the time of the year 1 ASR will never be reported as resolved, as the event is only reported once.\n\n\nProducing a safety report\nTemplates for writing an ASR are available on swissethics and the SCTO platforms websites.\nMembers of the SCTO Statistics Platform have prepared an R package, SwissASR, to assist in completing the swissethics ASR template. If you provide a dataframe containing the safety data, and the information necessary for the ASR report as listed below, the function will automatically return a filled out ASR report in MS Word format. This could then be forwarded to the PI for supplemental input (e.g. completion of relevant check boxes and the summary of the safety evaluation section), signing and submission to the relevant authorities.\n\n\n\n\nflowchart LR\n\n  db[(Database\\ne.g. REDCap, \\n secuTrial)] --> R\n  subgraph R\n  direction TB\n  r1(Any necessary \\n modification of data \\n e.g. recoding, renaming) --> r2[ SwissASR::asr ]\n  end\n  R --> Word\n  Word --> Sponsor\n  Sponsor --> reg[Regulatory\\nauthorities]\n\n\n\n\n\n\n\n\n\n\nExample SwissASR code\n\n# install the package\n# install.packages(\"SwissASR\", repos = \"https://ctu-bern.r-universe.dev\")\n# load the package\nlibrary(SwissASR)\n\n# Load the dataset containing the safety event data\n# Here we use the example dataset 'asr_sae'. Your dataset should have the same format.\n# If you have different column names, you can rename them, or use the var_* options \n# to specify the names of the relevant variables \n# For more information about the function, including the var_* options, please check\n# the package helpfiles\ndata(asr_sae)\n\n# Execute the function to produce the report\nasr(\n  asr_sae,                 # dataset containing the safety event data\n  \"Trial_ASR.docx\",        # report filename\n  # trial info\n  trial_title = \"Example Trial Name\",\n  protocol_number = \"20221002130\",\n  basec_number = \"....\",\n  snctp_number = \"202200458\",\n  swissmedic_number = \"....\",\n  ec_name = \"Kantonale Ethikskommision Bern\",\n  product_name = \"Drug name\",\n  international = FALSE,\n  trial_type = \"imp\",      # IMP/MD/Other\n  # Sponsor info\n  sponsor_contact = \"Sponsor name, Sponsor phone number, Sponsor email\",\n  inst_name_address = \"Institute name, Institute address\",\n  # site info\n  n_centers_t = 20,        # total number\n  n_centers_p = 20,        # planned\n  n_centers_c = 0,         # closed - derive from data\n  n_centers_o = 18,        # open - derive from data\n  # participant info\n  n_pat_t = 1000,          # target\n  n_pat_e = 300,           # enrolled - derive from data\n  n_pat_c = 0,             # complete - derive from data\n  n_pat_p = 0,             # prematurely terminated - derive from data\n  # report info\n  report_date = format(Sys.Date(), format = \"%d/%m/%Y\"), # todays date\n  period_from = as.Date(\"2020-11-01\"), # ideally trial start date\n  period_to = Sys.Date()\n)\n\nElements marked with derive from data can be set such that the code extracts those points from the database and fills them in automatically."
+  },
+  {
+    "objectID": "AdjustedSurvivalCurves.html",
+    "href": "AdjustedSurvivalCurves.html",
+    "title": "Adjusted survival curves",
+    "section": "",
+    "text": "Warning\n\n\n\nThis page is under development. Changes should be expected."
+  },
+  {
+    "objectID": "AdjustedSurvivalCurves.html#knowledge-from-the-crystal-ball",
+    "href": "AdjustedSurvivalCurves.html#knowledge-from-the-crystal-ball",
+    "title": "Adjusted survival curves",
+    "section": "Knowledge from the crystal ball",
+    "text": "Knowledge from the crystal ball\nBecause we simulated the data, we know that medication has no effect on mortality."
+  },
+  {
+    "objectID": "AdjustedSurvivalCurves.html#descriptive-table",
+    "href": "AdjustedSurvivalCurves.html#descriptive-table",
+    "title": "Adjusted survival curves",
+    "section": "Descriptive table",
+    "text": "Descriptive table\nThe table below shows a descriptive summary of the study population, by medication.\ndata %>% \n  tbl_summary(by = medi) \n\n\n\n\n\n  \n  \n    \n      Characteristic\n      0, N = 1721\n      1, N = 3281\n    \n  \n  \n    fup\n8 (3, 17)\n6 (3, 14)\n    death\n65 (38%)\n156 (48%)\n    enzyme\n64 (37%)\n199 (61%)\n    female\n102 (59%)\n210 (64%)\n  \n  \n  \n    \n      1 Median (IQR); n (%)"
+  },
+  {
+    "objectID": "AdjustedSurvivalCurves.html#unadjusted-kaplan-meier-curve-and-cox-modelling",
+    "href": "AdjustedSurvivalCurves.html#unadjusted-kaplan-meier-curve-and-cox-modelling",
+    "title": "Adjusted survival curves",
+    "section": "Unadjusted Kaplan-Meier curve and Cox-modelling",
+    "text": "Unadjusted Kaplan-Meier curve and Cox-modelling\nA naive (unadjusted) survival analysis of the data reveals the following Kaplan-Meier plot. We conclude that the medication has an effect on survival.\n\nmod <- survfit(Surv(fup, death) ~ medi, data = data)\nggsurvplot(mod, data = data, palette = c(\"#CC0000\", \"black\"), censor = FALSE)\n\n\n\n\n\nmod_cox_unadjusted <- coxph(Surv(fup, death) ~ medi, data = data)\nmod_cox_unadjusted\n\nCall:\ncoxph(formula = Surv(fup, death) ~ medi, data = data)\n\n       coef exp(coef) se(coef)     z      p\nmedi 0.3345    1.3973   0.1479 2.262 0.0237\n\nLikelihood ratio test=5.34  on 1 df, p=0.0209\nn= 500, number of events= 221 \n\n\nAn unadjusted Cox proportional hazard model shows that patients with medication have 1.4 higher hazard of death compared to those without medication.\n\nmod_cox_adjusted <- coxph(Surv(fup, death) ~ medi + enzyme + female, data = data)\nmod_cox_adjusted\n\nCall:\ncoxph(formula = Surv(fup, death) ~ medi + enzyme + female, data = data)\n\n           coef exp(coef) se(coef)      z      p\nmedi    0.01920   1.01938  0.14993  0.128  0.898\nenzyme  2.12737   8.39280  0.20308 10.475 <2e-16\nfemale -0.03787   0.96284  0.16500 -0.230  0.818\n\nLikelihood ratio test=179.2  on 3 df, p=< 2.2e-16\nn= 500, number of events= 221 \n\n\nWhat happens if we adjust for enzym and sex? Then the effect of the medication on death vanishes (hazard ratio=1.02)."
+  },
+  {
+    "objectID": "AdjustedSurvivalCurves.html#ipw-modelling",
+    "href": "AdjustedSurvivalCurves.html#ipw-modelling",
+    "title": "Adjusted survival curves",
+    "section": "IPW modelling",
+    "text": "IPW modelling\nAn IPW modelling approach constructs treatment weights (here medication) given known covariates (here sex and enzyme) using a logistic regression model.\n\n# IPW denominator\nmod <- glm(medi ~ female + enzyme, data = data, family = binomial())\n\ndata$ipw <- NA\n# Probabilty of treatment\ndata$ipw <- predict(mod, data = data, type = \"response\")\n# Probabilty of non-treatment\ndata$ipw[data$medi==0] <- 1 - predict(mod, data = data, type = \"response\")[data$medi == 0]\n\nWe construct stabilized weights, since they can provide narrower confidence intervals (Hernán and Robins (2022)).\n\n# Stabilized weights\nmod0 <- glm(medi ~ 1, data = data, family = binomial())\ndata$ipw0 <- predict(mod0, data = data, type = \"response\")\ndata$ipw0[data$medi == 0] <- 1 - predict(mod0, data = data, type = \"response\")[data$medi == 0]\ndata$ipw <- data$ipw0 / data$ipw\n\nAn IPW adjusted Kaplan-Meier curve reveals that medication has no effect on survival:\n\n# Set survey design\nsvy_design <- svydesign(id = ~1, weights = ~ipw, data = data)\n\n# IPW adjusted Kaplan-Meier\nkm_fit <- svykm(Surv(fup, death) ~ medi, design = svy_design)\n\nkm_df <- data.frame(time = km_fit$`1`$time, surv = km_fit$`1`$surv, strata = \"medi=1\")\nkm_df <- bind_rows(km_df, data.frame(time=km_fit$`0`$time, surv=km_fit$`0`$surv, strata = \"medi=0\"))\nggsurvplot_df(km_df, palette = c(\"#CC0000\", \"black\"), censor=FALSE)\n\n\n\n\n\nmod_cox_ipw_adjusted <- svycoxph(Surv(fup, death) ~ medi, design = svy_design)\nsummary(mod_cox_ipw_adjusted)\n\nIndependent Sampling design (with replacement)\nsvydesign(id = ~1, weights = ~ipw, data = data)\n\n\nCall:\nsvycoxph(formula = Surv(fup, death) ~ medi, design = svy_design)\n\n  n= 500, number of events= 221 \n\n         coef exp(coef) se(coef) robust se      z Pr(>|z|)\nmedi -0.04057   0.96024  0.14165   0.14255 -0.285    0.776\n\n     exp(coef) exp(-coef) lower .95 upper .95\nmedi    0.9602      1.041    0.7262      1.27\n\nConcordance= 0.494  (se = 0.019 )\nLikelihood ratio test= NA  on 1 df,   p=NA\nWald test            = 0.08  on 1 df,   p=0.8\nScore (logrank) test = NA  on 1 df,   p=NA\n\n  (Note: the likelihood ratio and score tests assume independence of\n     observations within a cluster, the Wald and robust score tests do not).\n\n\nThis is confirmed by an IPW adjusted Cox regression model (hazard ratio=0.96)."
+  },
+  {
+    "objectID": "tutorials.html#safety-reporting-in-clinical-triasafetyreporting.qmd",
+    "href": "tutorials.html#safety-reporting-in-clinical-triasafetyreporting.qmd",
+    "title": "Tutorials",
+    "section": "[Safety reporting in clinical triasafetyreporting.qmd)",
+    "text": "[Safety reporting in clinical triasafetyreporting.qmd)\n \nMost clinical trials require safety reporting to authorities. This tutorial gives some information on, primarily, annual safety reporting and introduces an R package for automatically filling out the swissethics annual safety report template."
+  },
+  {
+    "objectID": "tutorials.html#safety-reporting-in-clinical-trials",
+    "href": "tutorials.html#safety-reporting-in-clinical-trials",
+    "title": "Tutorials",
+    "section": "Safety reporting in clinical trials",
+    "text": "Safety reporting in clinical trials\n \nMost clinical trials require safety reporting to authorities. This tutorial gives some information on, primarily, annual safety reporting and introduces an R package for automatically filling out the swissethics annual safety report template."
   }
 ]

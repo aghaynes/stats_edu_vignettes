@@ -25,3 +25,9 @@ Sample size calculations are also required for virtually every project. As stati
 ![](https://img.shields.io/badge/Target-Programmers-blue.svg) ![](https://img.shields.io/badge/Level-Intermediate-orange.svg)
 
 Survival curves are often depicted in an unadjusted state - i.e. the percentage surviving at a given timepoint, potentially split by a group. Where confounding occurs, unadjusted survival curves can be misleading. The inverse probability weighting method seeks to overcome this problem.
+
+## [Safety reporting in clinical trials](safetyreporting.qmd)
+
+![](https://img.shields.io/badge/Target-Programmers & Clinicians-blue.svg) ![](https://img.shields.io/badge/Level-Beginner-green.svg)
+
+Most clinical trials require safety reporting to authorities. This tutorial gives some information on, primarily, annual safety reporting and introduces an R package for automatically filling out the swissethics annual safety report template.

@@ -1,0 +1,98 @@
+---
+title: "Safety reporting in clinical trials"
+---
+
+The safety of research participants is of utmost importance and must be considered for various processes and decisions throughout a clinical study. As such, trialists must be vigilant with regards to participant safety. Many regulatory authorities require regular updates with regards to safety. Swissethics, for instance, requires expedited reporting of some safety events, as well as an Annual Safety Report (ASR).
+
+For more information about the conduct of clinical trial and safety reporting, we recommend the following pages: [Easy GCS](https://www.easy-gcs.ch/grid/yecs/conduct/safety/safety-reporting/procedures.html), [Safety Reporting Forms](https://www.sctoplatforms.ch/en/tools/safety-reporting-forms-21.html).
+
+## Annual Safety Reports, in practice
+
+### Definition of the reporting phase
+
+Often, the requirement is to submit any safety events that have occurred in at least the last 12 months of a trial. We believe that this is not sensible. In our opinion, all events that have occurred since the beginning of the trial should be reported. 
+
+:::{.callout-note}
+Similarly, for medical devices, a cumulative list for the full study period needs to be submitted as part of expedited reporting following [MDCG 2020-10/1](https://ec.europa.eu/docsroom/documents/41183)
+:::
+
+Suppose a trial was approved on the first of January 2020. This requires that ASRs be submitted each January. Now, suppose that the first years report is sent on the 3rd January 2021. On the 10th January 2021, during a follow up visit, we are informed that an event occurred the previous August (or February, or October, or December). The event should therefore have been reported in the recent report, but wasn't as we were unaware of it. Using the events-occuring-in-the-previous-12-months approach, the event will also not be reported in the next report (covering year 2 in 2022), as it occurred during year 1. Furthermore, events that were unresolved at the time of the year 1 ASR will never be reported as resolved, as the event is only reported once.
+
+### Producing a safety report
+
+Templates for writing an ASR are available on [swissethics](https://swissethics.ch/en/templates/meldungen) and the [SCTO platforms](https://www.sctoplatforms.ch/en/tools/safety-reporting-forms-21.html#section-256) websites.
+
+Members of the SCTO Statistics Platform have prepared an R package, `SwissASR`, to assist in completing the swissethics ASR template. If you provide a dataframe containing the safety data, and the information necessary for the ASR report as listed below, the function will automatically return a filled out ASR report in MS Word format. This could then be forwarded to the PI for supplemental input (e.g. completion of relevant check boxes and the summary of the safety evaluation section), signing and submission to the relevant authorities.
+
+
+```{mermaid}
+flowchart LR
+
+  db[(Database\ne.g. REDCap, \n secuTrial)] --> R
+  subgraph R
+  direction TB
+  r1(Any necessary \n modification of data \n e.g. recoding, renaming) --> r2[ <tt>SwissASR::asr</tt> ]
+  end
+  R --> Word
+  Word --> Sponsor
+  Sponsor --> reg[Regulatory\nauthorities]
+
+```
+
+#### Example `SwissASR` code
+
+
+```{r}
+#| eval: false
+# install the package
+# install.packages("SwissASR", repos = "https://ctu-bern.r-universe.dev")
+# load the package
+library(SwissASR)
+
+# Load the dataset containing the safety event data
+# Here we use the example dataset 'asr_sae'. Your dataset should have the same format.
+# If you have different column names, you can rename them, or use the var_* options 
+# to specify the names of the relevant variables 
+# For more information about the function, including the var_* options, please check
+# the package helpfiles
+data(asr_sae)
+
+# Execute the function to produce the report
+asr(
+  asr_sae,                 # dataset containing the safety event data
+  "Trial_ASR.docx",        # report filename
+  # trial info
+  trial_title = "Example Trial Name",
+  protocol_number = "20221002130",
+  basec_number = "....",
+  snctp_number = "202200458",
+  swissmedic_number = "....",
+  ec_name = "Kantonale Ethikskommision Bern",
+  product_name = "Drug name",
+  international = FALSE,
+  trial_type = "imp",      # IMP/MD/Other
+  # Sponsor info
+  sponsor_contact = "Sponsor name, Sponsor phone number, Sponsor email",
+  inst_name_address = "Institute name, Institute address",
+  # site info
+  n_centers_t = 20,        # total number
+  n_centers_p = 20,        # planned
+  n_centers_c = 0,         # closed - derive from data
+  n_centers_o = 18,        # open - derive from data
+  # participant info
+  n_pat_t = 1000,          # target
+  n_pat_e = 300,           # enrolled - derive from data
+  n_pat_c = 0,             # complete - derive from data
+  n_pat_p = 0,             # prematurely terminated - derive from data
+  # report info
+  report_date = format(Sys.Date(), format = "%d/%m/%Y"), # todays date
+  period_from = as.Date("2020-11-01"), # ideally trial start date
+  period_to = Sys.Date()
+)
+
+```
+
+Elements marked with `derive from data` can be set such that the code extracts those points from the database and fills them in automatically. 
+
+
+
