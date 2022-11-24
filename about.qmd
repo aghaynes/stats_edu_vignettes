@@ -4,9 +4,9 @@ title: "About us & contact"
 
 # About us
 
-This site was developed by statisticians of the SCTO statistics and methodology platform.
+This site was developed by statisticians of the SCTO Statistics & Methodology Platform.
 
-The SCTO statistics and methodology platform is a network of statisticians working in Swiss clinical trial units, universities, and cantonal hospitals. As part of the Swiss Clinical Trial Organisation (SCTO) network we are connected with other platforms (auditing, data management, education, monitoring, project management, regulatory affairs, safety) providing innovative tools for clinical research professionals. More information can be found on the [official SCTO platforms website](https://www.sctoplatforms.ch/).
+The SCTO Statistics & Methodology Platform is a network of statisticians working in Swiss Clinical Trial Units, universities, and cantonal hospitals. As part of the Swiss Clinical Trial Organisation (SCTO) network we are connected with other platforms (auditing, data management, education, monitoring, project management, regulatory affairs, safety) providing innovative tools for clinical research professionals. More information can be found on [the Tools & Resources website by the SCTO Platforms ](https://www.sctoplatforms.ch/).
 
 # Get in touch with us
 
